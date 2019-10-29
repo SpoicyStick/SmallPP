@@ -1,0 +1,9 @@
+﻿{% extends "layout.html" %}
+{% block content%}
+
+<div class="container">
+	{% if not session_user_name %}
+	<h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Welcome to the Workshop Manager Application. Please Login to continue.</h2>
+	{% endif %}
+</div>
+{% endblock %}
